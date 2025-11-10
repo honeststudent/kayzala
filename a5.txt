@@ -33,3 +33,42 @@ nikto -h http://127.0.0.1 -o nikto_local_report.txt
 
 # Optional: verbose output
 nikto -h http://127.0.0.1 -v
+
+
+
+
+
+#theoryghe bhava
+Network Scanning Using Nikto
+What is Nikto?
+Nikto is an open-source web server vulnerability scanner written in Perl. It is widely used in
+penetration testing and security assessments to scan web servers for potential security issues.
+Nikto checks for:
+• Over 7,000+ potentially dangerous files and programs
+• Outdated versions of over 1,250 servers
+• Configuration issues (like multiple index files, insecure HTTP headers)
+• SSL/TLS related vulnerabilities
+• Use of default files and weak configurations
+Nikto is not a stealthy tool; it is designed to be fast and comprehensive, making it useful for
+administrators and security testers to quickly identify weaknesses.
+Features of Nikto
+• Scans web servers for outdated software and known vulnerabilities.
+• Detects missing HTTP security headers such as X-Frame-Options or X-Content-TypeOptions.
+• Identifies dangerous files, backdoors, and misconfigured scripts.
+• Supports SSL/TLS scanning (-ssl flag).
+• Can take Nmap results as input to focus on live hosts with HTTP services.
+• Saves results in multiple formats (TXT, CSV, HTML, XML).
+• Open source and frequently updated.
+Why Use Nikto?
+Web servers are one of the most targeted components of a network. Misconfigurations, old
+software versions, or insecure practices can lead to severe vulnerabilities. Nikto provides:
+• A quick way to enumerate server details.
+• Identification of potential exploits and insecure headers.
+• A baseline for further manual penetration testing.
+Role of Nmap with Nikto
+• Nmap is used for network discovery to find live hosts and open ports (such as port 80
+for HTTP).
+• Nikto is then used to perform in-depth vulnerability scanning of the identified web
+services.
+• Together, they provide a practical approach to network scanning: discovery first
+(Nmap), detailed analysis second (Nikto).
