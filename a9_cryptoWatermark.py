@@ -93,6 +93,3 @@ if __name__ == "__main__":
         print("Invalid choice.")
 
 
-#C:\Users\asus\OneDrive\Pictures\cyberpunkwall.jpg
-
-#C:\Users\asus\OneDrive\Desktop\EXAM INVENTORY\IS\Practicals\watermarked.png
