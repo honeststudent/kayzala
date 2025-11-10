@@ -1,0 +1,35 @@
+# Nikto Practical - Quick Commands (for Exam)
+
+# Step 1 - Install Nikto
+sudo apt update
+sudo apt install nikto -y
+
+# Verify installation
+nikto -h
+
+# Step 2 - Basic scan on test website (safe target)
+nikto -h http://testphp.vulnweb.com
+
+# Step 3 - Scan SSL/HTTPS website
+nikto -h https://pbs.org -ssl
+
+# Step 4 - Network discovery with Nmap (find subnet first)
+sudo ifconfig
+# Example: scan port 80 on local subnet and save output
+sudo nmap -p 80 10.0.2.0/24 -oG myscan.txt
+
+# Optional: view saved scan results
+cat myscan.txt
+
+# Step 5 - Install and start Apache locally (if no host has port 80 open)
+sudo apt install apache2 -y
+sudo service apache2 start
+
+# Step 6 - Scan local Apache server with Nikto
+nikto -h http://127.0.0.1
+
+# Optional: save Nikto output to a file
+nikto -h http://127.0.0.1 -o nikto_local_report.txt
+
+# Optional: verbose output
+nikto -h http://127.0.0.1 -v
