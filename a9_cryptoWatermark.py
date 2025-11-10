@@ -1,7 +1,3 @@
-# a9_cryptoWatermark_fixed.py
-# Simple cryptographic watermarking with automatic length storage
-# By Aditya Kale (small, easy-to-remember)
-
 from PIL import Image
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
@@ -98,4 +94,5 @@ if __name__ == "__main__":
 
 
 #C:\Users\asus\OneDrive\Pictures\cyberpunkwall.jpg
+
 #C:\Users\asus\OneDrive\Desktop\EXAM INVENTORY\IS\Practicals\watermarked.png
