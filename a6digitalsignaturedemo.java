@@ -16,7 +16,7 @@ public class a6digitalsignaturedemo {
             sign.initSign(privateKey);
 
             // Step 3: Input message
-            String message = "This is a digital signature demo by Aditya Kale";
+            String message = "This is a digital signature demo by honest student";
             byte[] messageBytes = message.getBytes();
 
             // Step 4: Supply the message to be signed
@@ -49,3 +49,4 @@ public class a6digitalsignaturedemo {
         }
     }
 }
+
