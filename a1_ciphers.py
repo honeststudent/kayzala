@@ -1,7 +1,3 @@
-# ====== CIPHER PROGRAM ======
-# Author: Aditya Kale (for practical / demo use)
-# Ciphers: Playfair, Vigenere, Columnar, Rail Fence
-
 import math
 
 # ===================== PLAYFAIR CIPHER =====================
@@ -165,3 +161,4 @@ if __name__ == "__main__":
     c = rail_fence_encrypt(text, 3)
     print("Encrypted:", c)
     print("Decrypted:", rail_fence_decrypt(c, 3))
+
